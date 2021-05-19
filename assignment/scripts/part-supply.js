@@ -29,6 +29,22 @@ console.log(supplyChanges);
 //    - if the value is 0, skip it. Do not log it to the console.
 //    - if the value is negative, format the log as 'Part count -x.'
 console.log('6. Showing supplyChanges...');
+for( let i=0; i < supplyChanges.length; i++){
+  if(supplyChanges[i] > 0){
+    console.log(`Added ${supplyChanges[i]} parts.`);
+  }
+  else if(supplyChanges[i] === 0){
+    continue;
+  }
+  else if(supplyChanges[i] < 0){
+    console.log(`Part count ${supplyChanges[i]}.`);
+  }
+}
+
+// STRETCH GOALS
+console.log('---  Stretch Goals  ---');
+// 7. Rewrite the `for` loop from #6 as a `for of` loop.
+console.log('7. Showing supplyChanges with "for of" loop');
 for( x of supplyChanges){
   if(x > 0){
     console.log(`Added ${x} parts.`);
@@ -40,12 +56,6 @@ for( x of supplyChanges){
     console.log(`Part count ${x}.`);
   }
 }
-
-// STRETCH GOALS
-console.log('---  Stretch Goals  ---');
-// 7. Rewrite the `for` loop from #6 as a `for of` loop.
-console.log('7. Showing supplyChanges with "for of" loop');
-
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
