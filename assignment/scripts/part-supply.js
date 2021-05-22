@@ -33,9 +33,10 @@ for (let i=0; i < supplyChanges.length; i++){
     console.log(`Added ${supplyChanges[i]} parts.`);
   } else if (supplyChanges[i] < 0){
     console.log(`Part count ${supplyChanges[i]}.`);
-  } else {
-    continue;
-  }
+  }  //Looks like the else can be eliminated all together
+   //else {
+    //continue;
+  //}
 }
 
 // STRETCH GOALS
@@ -47,9 +48,9 @@ for( let x of supplyChanges){
     console.log(`Added ${x} parts.`);
   } else if(x < 0){
     console.log(`Part count ${x}.`)
-  } else {
-    continue;
-  }
+  } //else {
+    //continue;
+  //}
 }
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
