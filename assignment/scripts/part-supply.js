@@ -66,7 +66,6 @@ while( i < iMax){
     i++
   } else {
     i++;
-    continue;
   }
 }
 
